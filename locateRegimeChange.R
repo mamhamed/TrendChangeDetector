@@ -1,9 +1,10 @@
 locateRegimeChange <- function(a, initialWindowSize, incrementalWindowSize, plotScore=FALSE, pvalue_thr=0.01){
   ## input: 
   ## a: data has in the form of [X, Y] X, Y are vectors
-  ## windowSize: the size of sliding window
+  ## initialWindowSize: size of the first window to fit the model
+  ## incrementalWindowSize: the size of sliding window (test window)
   ## plotScore: if TRUE it will plot the t-score value
-  ## refModel: the model to use as the reference
+  ## pvalue_thr: p-value threshold
   ##
   ## output: the index number at which the linear model changes
   
